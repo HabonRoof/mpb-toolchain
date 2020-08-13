@@ -1,26 +1,39 @@
  
-Build dependent packages:
+Build dependent packages:  
+<pre>
 $ sudo apt install autoconf automake autotools-dev curl libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev
+</pre>
 
-Build for GD32VF103:
+Build for GD32VF103:  
+
+<pre>
 $ mkdir build
 $ ./configure --prefix=`pwd`/build --with-arch=rv32imac --with-abi=ilp32
 $ make
+</pre>
 
-RISC-V ISA Base and Extension: rv32imac
-* rv32i – Base Integer Instruction Set, 32-bit. 
-* m – Standard Extension for Integer Multiplication and Division.
-* a – Standard Extension for Atomic Instructions.
-* c – Standard Extension for Compressed Instructions.
+RISC-V ISA Base and Extension: rv32imac  
 
-Git Clone from MapleBoard repository:
+* rv32i – Base Integer Instruction Set, 32-bit.  
+
+* m – Standard Extension for Integer Multiplication and Division.  
+
+* a – Standard Extension for Atomic Instructions.  
+
+* c – Standard Extension for Compressed Instructions.  
+
+Git Clone from MapleBoard repository:  
+
 $ git clone -o ces -b mapleboard --recursive git3@git.ces.com.tw:/git/riscv-gnu-toolchain.git
 
-Update from MapleBoard repository:
+Update from MapleBoard repository:  
+
 $ git pull ces mapleboard
 
-Update submodules:
-$ git submodule foreach --recursive git pull
+Update submodules:  
 
-Push to MapleBoard repository (You need write privilege, please contact jb@ces.com.tw):
+$ git submodule foreach --recursive git pull  
+
+Push to MapleBoard repository (You need write privilege, please contact jb@ces.com.tw):  
+
 $ git push ces mapleboard 
