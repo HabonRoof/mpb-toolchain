@@ -1,9 +1,11 @@
 This toolchain is for GD32 RISC-V Nano/Pico development board.
 
-The origin repositry is at: https://github.com/riscv-mcu/riscv-gnu-toolchain provided by nuclei.
-The RISC-V original toolchain source is at : https://github.com/riscv/riscv-gnu-toolchain provided by RISC-V foundation.
+The origin repositry is at: https://github.com/riscv-mcu/riscv-gnu-toolchain provided by nuclei.  
+
+The RISC-V original toolchain source is at : https://github.com/riscv/riscv-gnu-toolchain provided by RISC-V foundation.  
+
 This toolchain is for MapleBoard GD32 RISC-V Nano/Pico users, please visit https://github.com/MapleBoard/Mpb-toolchain-Example
-to get the example of this toolchain.
+to get the example of this toolchain.  
 
 Build dependent packages:  
 <pre>
