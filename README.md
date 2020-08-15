@@ -17,7 +17,7 @@ Build for GD32VF103:
 <pre>
 $ mkdir build
 $ ./configure --prefix=`pwd`/build --with-arch=rv32imac --with-abi=ilp32
-$ make
+$ make 
 </pre>
 
 RISC-V ISA Base and Extension: rv32imac  
