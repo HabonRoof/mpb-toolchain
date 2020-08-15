@@ -17,8 +17,10 @@ Build for GD32VF103:
 <pre>
 $ mkdir build
 $ ./configure --prefix=`pwd`/build --with-arch=rv32imac --with-abi=ilp32
-$ make 
+$ make -j8
 </pre>
+
+* The -j8 means 8 threads, you can type more threads if your PC has more powerful CPU
 
 RISC-V ISA Base and Extension: rv32imac  
 
